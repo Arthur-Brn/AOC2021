@@ -2,8 +2,6 @@ import importlib
 import os
 import re
 
-import D01
-
 gbl = globals()
 
 
@@ -26,8 +24,7 @@ def showMainMenu():
 
 
 def showCredit():
-    # Use a breakpoint in the code line below to debug your script.
-    print('credit')  # Press ⌘F8 to toggle the breakpoint.
+    print('credit')
 
 
 def runADay():
@@ -57,8 +54,5 @@ def openDay(path_folder):
     print(day.part2())
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     showMainMenu()
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
