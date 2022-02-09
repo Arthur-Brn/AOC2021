@@ -15,3 +15,7 @@ def getListOfNumber(path):
     :return: (list(int)) a list of number
     """
     return [int(line) for line in getFile(path)]
+
+
+def getListOfObject(path):
+    return [line.split() for line in getFile(path)]

@@ -49,7 +49,7 @@ def runADay():
 
 def openDay(path_folder):
     gbl[path_folder] = importlib.import_module(f'{path_folder}.{path_folder}')
-    day = getattr(globals()[path_folder], 'D01')()
+    day = getattr(globals()[path_folder], path_folder)()
     print(day.part1())
     print(day.part2())
 
